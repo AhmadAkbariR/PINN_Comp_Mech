@@ -90,7 +90,7 @@ def Post_Process(net_u, net_v, pinn, his_loss):
     plt.plot(his_loss[0] + his_loss[1], color = 'k')
     plt.yscale('log')
     plt.xlabel('Iteration', fontdict = {'fontname': 'DejaVu'})
-    plt.ylabel('Loss', fontdict = {'fontname': 'Helvetica'})
+    plt.ylabel('Loss', fontdict = {'fontname': 'DejaVu'})
     plt.title('Loss History', fontdict = {'fontname': 'DejaVu'})
     plt.legend(['$L_{ge}$', '$L_{bc}$', 'L'])
     plt.savefig('hist_loss.tiff', dpi = 600, bbox_inches = 'tight')
