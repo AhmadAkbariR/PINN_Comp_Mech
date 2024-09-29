@@ -30,7 +30,7 @@ def FNN(n_input, n_output, layers, acti_fun = 'tanh', k_init = 'LecunNormal'):
 
     ### Setup the input layer of the FNN
     print( n_input)
-    x = tf.keras.layers.Input(shape=(n_input))
+    x = tf.keras.layers.Input(shape=(n_input),)
 
     ### Setup the hidden layers of the FNN
     temp = x
